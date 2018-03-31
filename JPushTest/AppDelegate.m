@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "AppDelegate+PushEncapsulation.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [self JPushApplication:application didFinishLaunchingWithOptions:launchOptions];
+    
     // Override point for customization after application launch.
     return YES;
 }
